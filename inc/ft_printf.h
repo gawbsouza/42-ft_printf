@@ -6,7 +6,7 @@
 /*   By: gasouza <gasouza@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 15:58:38 by gasouza           #+#    #+#             */
-/*   Updated: 2022/05/25 15:05:43 by gasouza          ###   ########.fr       */
+/*   Updated: 2023/03/27 14:05:24 by gasouza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 # define UNSIGNED_INT 0
 
 int		ft_printf(const char *format, ...);
-size_t	ft_strlen(const char *s);
+size_t	get_str_len(const char *s);
 char	*ft_num_base_str(long long int n, int signal, char *base);
 int		ft_print_char(char c);
 int		ft_print_nbr(long int n, int signal);

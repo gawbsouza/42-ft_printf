@@ -6,7 +6,7 @@
 /*   By: gasouza <gasouza@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 20:17:36 by gasouza           #+#    #+#             */
-/*   Updated: 2022/05/25 10:59:35 by gasouza          ###   ########.fr       */
+/*   Updated: 2023/03/27 14:05:38 by gasouza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static char	*build_str(const char *buff)
 	size_t	len;
 	size_t	pos;
 
-	len = ft_strlen(buff);
+	len = get_str_len(buff);
 	pos = 0;
 	str = (char *) malloc((len + 1) * sizeof(char));
 	if (str != NULL)
@@ -38,7 +38,7 @@ char	*ft_num_base_str(long long int n, int signal, char *base)
 	size_t					radix;
 	size_t					pos;
 
-	radix = ft_strlen(base);
+	radix = get_str_len(base);
 	if (radix == 0)
 		return (NULL);
 	pos = 0;
